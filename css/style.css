@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+/* all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0.5rem;
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+}
+
+nav {
+    border: 2px solid #333;
+    border-radius: 2rem;
+    /* auto make the element stay in the center horizontally*/
+    margin: 0 auto 1rem;
+    /* set the max width to 600px, if we expand the browser to over 600, it will stay to 600px*/
+    max-width: 600px;
+    font-size: 3rem;
+    line-height: 7rem;:
+}
+
+h2 {
+    padding: 1rem;   /* inherit the font-size of the root element, 1rem=16px */
+    background: gold;
+    border-radius: 2rem 2rem 0 0;  /* only need to round the top borders */
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    border-top: 1px solid #333333;
+}
+
+li a {
+    /*change the a tag from inline level element to block level element*/
+    /* because block level element has 100% width */
+    /* this setting will make the a tag expand to the while li tag*/
+    display: block;
+}
+
+li a,
+li a:visited {
+    text-decoration: none;
+    color: #333333;   /* color stays the same before/after visited */
+}
+
+li a:hover,
+li a:focus {
+    background: #333333;
+    color: whitesmoke;
+    cursor: pointer;
+}
+
+
+li:last-child a{
+    border-radius: 0 0 2rem 2rem;
+}
